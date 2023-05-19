@@ -13,4 +13,5 @@ class Suppli extends Db
             return $data;
         } else return false;
     }
+
 }

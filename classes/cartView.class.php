@@ -10,4 +10,10 @@ class CartView extends Cart
     {
         return $this->getOrderDetailByIdOrder($id);
     }
+
+    public function getStatisticalOrders($dateStart,$dateEnd)
+    {
+        return $this->StatisticalOrders($dateStart,$dateEnd);
+    }
+    
 }

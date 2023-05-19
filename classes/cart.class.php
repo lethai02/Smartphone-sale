@@ -94,4 +94,24 @@ class Cart extends Db
             return true;
         } else return false;
     }
+
+    protected function StatisticalOrders($dateStart,$dateEnd)
+    {
+        $sql = "SELECT ct.id_dienthoai, COUNT(ct.id_dienthoai) AS total_sold
+        FROM chitietdonhang ct
+        INNER JOIN donhang dh ON ct.id_donhangnew = dh.id_donhang
+        WHERE dh.NgayGiaoHang >= '$dateStart' AND dh.NgayGiaoHang <= '$dateEnd'
+        GROUP BY ct.id_dienthoai
+        ORDER BY total_sold DESC";
+        $result = mysqli_query($this->connect(), $sql);
+        $data = [];
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_array($result)) {
+                $data[] = $row;
+            }
+            return $data;
+        } else {
+            return false;
+        }
+    }
 }

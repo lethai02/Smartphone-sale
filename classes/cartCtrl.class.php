@@ -8,11 +8,6 @@ class CartCtrl extends Cart
 
     public function insertCartDetailCtrl(CartDetailModel $cart)
     {
-        // if ($this->insertDetailCart($cart)) {
-        //     return true;
-        // } else {
-        //     return false;
-        // }
         return $this->insertDetailCart($cart);
     }
 

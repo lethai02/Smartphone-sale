@@ -28,14 +28,12 @@ if (!isset($_SESSION['auth']) && !isset($_SESSION['auth_user']['id_nhanvien'])) 
 
     <section id="sidebar">
 
-        <a href="#" class="brand"><i></i> Logo</a>
+        <a href="#" class="brand"><i></i> Smartphone</a>
         <ul class="side-menu">
-            <li class="dashboard"><a href="#" class="active"><i class="bx bxs-dashboard icon"></i> Dashboard </a></li>
             <li class="divider">MAIN</li>
             <li class="manager">
                 <a href="#"><i class="bx bxs-inbox icon"></i> Quản lý <i class="bx bx-chevron-right icon-right"></i></a>
                 <ul class="side-dropdown">
-                    <!-- <li class="account"><a href="#">Quản lý tài khoản</a></li> -->
                     <li class="baohanh"><a href="#">Quản lý bảo hành</a></li>
                     <li class="khuyenmai"><a href="#">Quản lý khuyến mãi</a></li>
                     <li class="nhanvien"><a href="#">Danh sách nhân viên</a></li>
@@ -54,16 +52,12 @@ if (!isset($_SESSION['auth']) && !isset($_SESSION['auth_user']['id_nhanvien'])) 
                 <ul class="side-dropdown">
                     <li><a href="#">Thống kê hoá đơn</a></li>
                     <li><a href="#">Thống kê tổng tiền</a></li>
-                    <li><a href="#">Thống kê sản phẩm</a></li>
+                    <li class="thongkesanpham"><a href="#">Thống kê sản phẩm</a></li>
                     <li><a href="#">Thống kê khách hàng</a></li>
                 </ul>
             </li>
 
             <li class="account"><a href="#"><i class="bx bx-clipboard icon"></i>Quản lý tài khoản </a></li>
-
-            <li class="decentralization">
-                <a href="#"><i class="bx bxs-chart icon"></i> Phân quyền</a>
-            </li>
 
 
         </ul>
@@ -75,10 +69,7 @@ if (!isset($_SESSION['auth']) && !isset($_SESSION['auth_user']['id_nhanvien'])) 
         <nav>
             <i class="bx bx-menu toggle-sidebar" style="margin-right: auto;"></i>
 
-            <!-- <a href="#" class="nav-link">
-                <i class="bx bxs-bell"></i>
-                <span class="badge">5</span>
-            </a> -->
+           
             <span class="divider"></span>
             <div class="profile">
                 <img src="assets/img/tải xuống (2).png" alt="">
@@ -90,8 +81,8 @@ if (!isset($_SESSION['auth']) && !isset($_SESSION['auth_user']['id_nhanvien'])) 
                     ?>
                 </span>
                 <ul class="profile-link">
-                    <li><a href="#"><i class="bx bxs-user-circle icon"></i>Profile</a></li>
-                    <li><a href="#"><i class="bx bxs-cog icon"></i>Settings</a></li>
+                    <!-- <li><a href="#"><i class="bx bxs-user-circle icon"></i>Profile</a></li>
+                    <li><a href="#"><i class="bx bxs-cog icon"></i>Settings</a></li> -->
                     <li class="logout"><a href="#"><i class="bx bxs-log-out-circle icon"></i>Logout</a></li>
                 </ul>
             </div>
@@ -142,7 +133,6 @@ if (!isset($_SESSION['auth']) && !isset($_SESSION['auth_user']['id_nhanvien'])) 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="assets/js/Admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-table2excel@1.1.1/dist/jquery.table2excel.min.js"></script>
 
     <script src ='assets/thaijs/accountLHT.js'></script>
@@ -154,9 +144,10 @@ if (!isset($_SESSION['auth']) && !isset($_SESSION['auth_user']['id_nhanvien'])) 
     <script src='assets/thaijs/nhacungcap.js'></script>
     <script src='assets/thaijs/thuonghieu.js'></script>
     <script src='assets/thaijs/phieunhap.js'></script>
+    <script src='assets/thaijs/QuanLy.js'></script>
+    <script src="assets/thaijs/index.js"></script>
+    <script src="assets/thaijs/thongke.js"></script>
 
-    <script src="./index1112.js">
-    </script>
 
 
 </body>
